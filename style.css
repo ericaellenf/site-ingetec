@@ -1,0 +1,195 @@
+/* Resetando estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+  
+  /* Cor de fundo, fontes e estrutura */
+  body{
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    color: #07012b;
+    text-align: center;
+
+    background-image: url(./images/LOGO-VETORIZADA\ INGETEC.png);
+    background-size: 2100px;
+    backface-visibility:inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Cabeçalho */
+  header {
+background-color: #f5c646;
+    color: white;
+    text-align: center;
+    display:inline-block;
+    vertical-align: middle;
+    display: flexbox;
+  }
+a{
+    color: #ffffff;
+    
+    font-size: 25px;
+    text-decoration:none;
+    padding-left: 50px;
+   
+
+    
+}
+img{
+    display: inline-block;
+    vertical-align: middle;
+}
+  ul{
+    padding: 15px;
+    color: #f8fdf1;
+  }
+  #logo{
+    margin-right: 1610px;
+    padding-left: 50px;
+    padding-top: 12px;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  
+  header p {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  /* Seções */
+  section {
+    padding: 60px 0;
+
+  }
+  
+  /* Animações de fade-in */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  section {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  section.active {
+    opacity: 1;
+  }
+
+  
+  /* Cards de serviços */
+  .services .cards {
+    margin-top: 500px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .card {
+    background-color: #f8fdf1;
+    border-radius: 8px;
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(50px);
+    cursor: pointer;
+  }
+  
+  .card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .card p {
+    color: #555;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Efeito de ativação da animação */
+  .card.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Formulário de contato */
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact input, .contact textarea {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .contact button:hover {
+    background-color: #e6c846;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #002c7c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  #foto-homem{
+    width: 500px;
+  }
+
+  table{
+    font-size: 30px;
+  }
+
+  h1{
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  h2{
+    padding: 30px;
+  }
+  
